@@ -1,0 +1,236 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    line-height: 1.4;
+    color: #444;
+    background: #fff;
+    height: 100vh;
+}
+
+
+/* Main Container */
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+
+/* Components Container */
+
+
+.container--inner {
+    width: 100%;
+    padding: 8rem 10px 4rem;
+}
+
+
+/* Input Form */
+
+
+.container--form {
+    width:100%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.container--form-input {
+    width: 85%;
+    font-size: 1rem;
+    font-weight: 400;
+    padding-right: 5px;
+    padding-left: 10px;
+    border-radius: 50px;
+}
+
+.container--form-input::placeholder {
+    color: #000;
+    opacity: 0.25;
+}
+
+.container--form-submit {
+    background: transparent;
+    color: darkcyan;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 600;
+    margin-right: 10px;
+    padding: 0.25em;
+    border: none;
+    display: flex;
+    align-items: center;
+}
+
+.container--form-input,
+.container--form-submit {
+    height: 2em;
+    outline: none;
+}
+
+.container--form-submit {
+    transition: all 0.25s ease;
+}
+
+.container--form-submit:hover {
+    transform: scale(1.1)
+}
+
+
+/* To do Item */
+
+
+.trash--btn {
+    transition: all 0.25s ease;
+}
+
+.trash--btn:hover {
+    background-color: grey;
+}
+
+
+/* Navigation Bar */
+
+
+.active-link {
+    color: orangered;
+    text-decoration: underline;
+}
+
+.navBar {
+    position: relative;
+}
+
+.navBar button {
+    position: fixed;
+    left: 40px;
+    top: 40px;
+    cursor: pointer;
+    z-index: 10;
+    border: none;
+    background: black;
+    padding: 0.25em;
+    border-radius: 10px;
+}
+
+.menuNav {
+    overflow-y: scroll;
+    list-style: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: darkcyan;
+    height: 100vh;
+    width: 0;
+    overflow: hidden;
+    max-width: 200px;
+    z-index: 9;
+}
+
+.menuNav.showMenu {
+    width: 100%;
+}
+
+.menuNav li:first-child {
+    margin-top: 7rem;
+}
+
+a {
+    display: block;
+    padding: 10px 40px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 1.25em;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+
+a:hover {
+    color:white;
+}
+
+
+
+/* About Page */
+
+
+
+.about--container {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:15%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    letter-spacing: 0.05em;
+
+}
+
+.about--container a {
+    margin-top: 3rem;
+    letter-spacing: 0.25em;
+}
+
+.about--container a:hover {
+    color: darkcyan;
+}
+
+
+/* Author Page */
+
+.author--main-container {
+    height: 100%;
+    width: 100%;
+    margin-top: 2.5em;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.author--img {
+    flex: 1;
+    height: 100%;
+    margin-right: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.author--img-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.author--text {
+    flex: 1;
+    margin-top: 2.5em;
+    margin-right: 2em;
+    margin-left: 2em;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    letter-spacing: 0.05em;
+}
