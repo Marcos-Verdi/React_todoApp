@@ -5,7 +5,7 @@ import styles from './TodoItem.module.css'
 
 const TodoItem = (props) => {
 
-    const [editing, setEditing] = useState(false)
+    const [editing, setEditing] = useState(false);
 
 
     const completedStyle = {
@@ -13,23 +13,21 @@ const TodoItem = (props) => {
         color: "#595959",
         opacity: 0.4,
         textDecoration: "line-through"
-    }
+    };
 
 
-    const { completed, id, title } = props.todo
+    const { completed, id, title } = props.todo;
 
 
-    let viewMode = {}
-    let editMode = {}
+    let viewMode = {};
+    let editMode = {};
 
     if (editing) {
-        viewMode.display = "none"
+        viewMode.display = "none";
     } else {
-        editMode.display = "none"
+        editMode.display = "none";
     }
 
-
-        
     const handleEditing = () => {
         setEditing(true)
     }

@@ -50,14 +50,14 @@ const App = () => {
 
 
     const setUpdate = (updatedTitle, id) => {
-      setTodos({
-        todo: todos.map(todo => {
+      setTodos(
+        todos.map(todo => {
           if (todo.id === id) {
             todo.title = updatedTitle
           }
           return todo
         })
-      })
+      )
     }
 
 
